@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Avenir Next", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --color-bg: #14170f;
+  --color-fg: #f4efe2;
+  --color-muted: #b7b19f;
+  --color-accent: #e6a23c;
+  --color-hud: #1c2118;
+  --color-line: #2e3628;
+  --color-danger: #d15a3a;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

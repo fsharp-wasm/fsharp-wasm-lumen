@@ -1,0 +1,7 @@
+package lumen:lumen@0.1.0;
+
+world lumen {
+  export %"rowCount": func(level_1: s32) -> s32;
+  export %"brickHp": func(level_1: s32, row: s32) -> s32;
+  export %"shouldKeep": func(level_1: s32, row: s32, col: s32, rows: s32) -> s32;
+}
